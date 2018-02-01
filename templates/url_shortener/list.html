@@ -5,6 +5,7 @@
     <title>Saved Links</title>
 </head>
 <body>
+    {% csrf_token %}
     {% if all_links %}
         <ul>
             {% for link in all_links %}
